@@ -5,7 +5,7 @@ This is my hands-on data engineering project. I built an automated data pipeline
 ## 📊 Pipeline Graph (Architecture)
 The workflow follows a clean 3-step operational path managed by Apache Airflow:
 
-[1. Create Table] ──> [2. Fetch API to S3] ──> [3. Load S3 to Postgres]
+[1. Create Table] ──>[2. Fetch API to S3] ──> [3. Load S3 to Postgres]
        │                      │                           │
 (PostgresOperator)     (Requests API)             (Pandas & SQLAlchemy)
 Creates SQL Schema     Saves Raw JSON to Lake     Loads Database Tables
